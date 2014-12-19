@@ -1,0 +1,19 @@
+ string[] food = { "Hamburger", "Pizza", "Chicken", "Salad" };
+
+            double[] price = { 3.45, 6.30, 9.50, 5.30 };
+
+            foreach (string item in food)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Which Meal ?");
+
+            string eat = Console.ReadLine();
+
+            for (int i = 0; i < food.Length; i++)
+            {
+                if (food[i] == eat)
+                {
+                    Console.WriteLine(price[i] + "euro");
+                }
+            }
